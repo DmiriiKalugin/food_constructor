@@ -42,6 +42,6 @@ class FoodConstructorController extends Controller
 
         $code = $data['code'];
 
-        return response()->json(FoodConstructor::food_constructor($code));
+        return response()->json(FoodConstructor::food_constructor($code), 200);
     }
 }
