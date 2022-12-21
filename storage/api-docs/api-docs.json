@@ -1,0 +1,39 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "FoodConstructor  ApplicationAPI",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/create_a_dish/": {
+            "post": {
+                "tags": [
+                    "Create_a_dish"
+                ],
+                "summary": "Получение состава блюда",
+                "description": "Получение состава блюда",
+                "operationId": "Create_a_dish",
+                "parameters": [
+                    {
+                        "name": "code",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

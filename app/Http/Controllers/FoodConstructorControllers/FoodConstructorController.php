@@ -36,7 +36,6 @@ class FoodConstructorController extends Controller
      *       ),
      * )
      */
-
     public function create_a_dish(Request $request){
         $data = $request->all();
 
